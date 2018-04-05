@@ -4,45 +4,76 @@
     <meta charset="utf-8" />
     <title>Crystals Collector!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <section class = "main-container">
-        <h1>Crystals Collector!</h1>
+    <div class = "main-container">
+        <div class = "jumbotron">
+            <h1>Gem Collector!</h1>
+        </div>
+        
+        <div class = "row">
 
-        <div id = "directions">
-            <p>You will be given a random number at the start of the game</p>
-            <br>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific 
+             <div class = "col-md-6" id = "directions">
+                 <h2>Directions</h2>
+                 <hr>
+                <p>You will be given a random number at the start of the game</p>
+                <br>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific 
                 amount fo points to your total score.
-            </p>
-            <br>
-            <p>You win the game by matching your total score to random number,
+                </p>
+                <br>
+                <p>You win the game by matching your total score to random number,
                 you lose the game if your total score goes above the random number. </p>
-            <br>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <br>
-            <p>Each time when the game starts, the game will change values of each crystal.</p>    
+                <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time when the game starts, the game will change values of each crystal.</p>    
+            
+                <div id = "random-number">
+
+                </div>
+                
+                <div id = "win-loss">
+                    Wins:
+                    <br>
+                    Losses:
+                </div>
+                
+                <div id = "score">
+                    <p>Your total score is: </p>
+                </div>
+        
+                <div id "total-score">
+
+                </div>
+
+            </div>
+            
+            <div class = "col-md-6">
+            
+            </div>
+
+                <div id = "button-group">
+                    <button class = "btn" id = "btn1"><img class = "gems" src = "assets/images/images-1.png" alt = "orange gem"></button>
+                    <button class = "btn" id = "btn2"><img class = "gems" src = "assets/images/images-2.png" alt = "red gem"></button>
+                    <button class = "btn" id = "btn3"><img class = "gems" src = "assets/images/images.png" alt = "purple gem"></button>
+                    <button class = "btn" id = "btn4"><img class = "gems" src = "assets/images/small_15735.png" alt = " green gem"></button>
+                </div>
+
+            </div>
+
         </div>
+        </div><!-- row end-->
 
-        <div id = "random-number"></div>
-        <div id = "win-loss"></div>
-
-        <div id = "button-group">
-            <button class = "btn" id = "btn1">Button 1</button>
-            <button class = "btn" id = "btn2">Button 2</button>
-            <button class = "btn" id = "btn3">Button 3</button>
-            <button class = "btn" id = "btn4">Button 4</button>
+        <div class = "row">
+                <footer class="footer"><!--footer-->
+                    <span class="text-muted">&copy;Copyright</span>
+            </footer><!--footer end-->
         </div>
-
-        <div id = "score">
-            <p>Your total score is: </p>
-        </div>
-
-        <div id "total-score"></div>
-
-    </section>
+    </div>
     
 </body>
 </html>
