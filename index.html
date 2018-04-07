@@ -5,19 +5,20 @@
     <title>Gem Collector!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <div class = "main-container">
-        <div class = "jumbotron">
+        <div class = "Heading">
             <h1>Gem Collector!</h1>
         </div>
         
         <div class = "row">
-
-            <div class = "col-md-6" id = "directions">
-                 <h2>Directions</h2>
+            <div class = "col-md-6" id = "directions-box">                
+                
+                <h2>Directions</h2>
                  <hr>
                 <p>You will be given a random number at the start of the game.</p>
                 <br>
@@ -30,31 +31,29 @@
                 <br>
                 <p>The value of each gem is hidden from you until you click on it.</p>
                 <br>
-                <p>Each time when the game starts, the game will change values of each gem.</p>    
-                
-                <section>   
+                <p>Each time when the game starts, the game will change values of each gem.</p>                    
+               
+                <section id = "score-box">   
                     <div id = "random-number">
                         Random Number: 0
                     </div>
-                
+            
                     <div id = "total-score">
                         Your Total Score: 0
                     </div>
-                 
-                
+             
                     <div id = "win-loss">
-                        <p id = "para-win">Wins: 0</p> 
-                        <p id = "para-loss">Losses: 0</p>
+                        Wins: 0
+                        Losses: 0
+                        <!--<p id = "para-win">Wins: 0</p> 
+                        <p id = "para-loss">Losses: 0</p>-->
                     </div>
                 </section>
-                
-
             </div><!--end column #directions-->
-            
+
             <div class = "col-md-6">
             
                 </div id = "button-group">
-
                     <div id ="buttons"></div>
 
                 </div>
@@ -62,12 +61,11 @@
             </div>
         
         </div><!-- row end-->
-
-        <div class = "row">
+        
                 <footer class="footer"><!--footer-->
-                    <span class="text-muted">&copy;Copyright</span>
-            </footer><!--footer end-->
-        </div>
+                    <span class="text-muted">&copy;Copyright Matt Clark</span>
+                </footer><!--footer end-->
+       
     </div><!--end #main-container-->
     <script src = "assets/javascript/game.js"></script>
 </body>

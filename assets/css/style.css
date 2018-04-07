@@ -2,87 +2,111 @@
     box-sizing: border-box;
 }
 
-.body{
-    width:980px;
+body{
+  background-image:url("../images/gem-mine.jpg");
+  background-size:cover;
+  font-family: 'Poor Story', cursive;
 }
 
-.jumbotron{
+#main-container{
+    margin:0 auto;
+}
+/* Gem Collector heading*/
+h1{
     text-align:center;
-    width:100%;
-    margin-bottom:20px;
+    color:whitesmoke;
+    font-weight:bold;
+    font-size: 48px;
+    font-family: 'Poor Story', cursive;
+    background-color: rgb(238, 130, 153);
+    opacity:0.9;
 }
-
-#directions{
+/*directins box*/
+#directions-box{
     border: 2px solid black;
     margin:20px;
-    position:relative;
     overflow:auto;
+    color:whitesmoke;
+    background-color: rgb(50, 205, 120);
+    opacity:0.98;
 }
 
-#directions p{
+#directions-box p{
     font-size:16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-    display:inline-flex;
+/*div for all counter boxes*/
+#score-box{
+    display: inline-flex;
+    padding: 0px 15px 0px 15px;
+    margin-bottom:45px;
+    overflow:auto;
+    text-align:center;
+    margin:0 auto;
 }
+
 #random-number{
-    width:200px;
+    width:150px;
     height:75px;
-    background-color:lightblue;
-    font-size:24px;
+    background-color:royalblue;
+    font-size:20px;
     font-weight:bold;
     overflow: auto;
     border:1px solid black;
-    margin-bottom:5px;
+    margin-bottom:10px;
     text-align:center;
 }
 
 #total-score{
     height:75px;
-    width:200px;
+    width:150px;
     border:1px solid black;
-    background-color:lightblue;
+    background-color: royalblue;
     overflow:auto;
-    font-size:24px;
+    font-size:20px;
     font-weight:bold;
-    margin-bottom:5px;
+    margin-bottom:10px;
     text-align:center;
-    position:absolute;
-    right:15px;
+    margin-left:45px;
 }
+
 #win-loss{
     border:1px solid black;
-    margin-bottom:5px;
-    font-size:24px;
+    margin-bottom:10px;
+    font-size:20px;
     font-weight:bold;
     text-align:center;
     height:75px;
     overflow:auto;
-    width:140px;
-    margin-left:10px;
+    width:150px;
+    background:royalblue;
+    margin-left:45px;
 }
-
-
+/*gem buttons*/
 #buttons{
-    margin-left:20px;
-    margin-top:10px;
-
+    margin-left:50px;
+    margin-top:10px
 }
 
 .gems{
     height:200px;
     width:200px;
-    border:2px solid grey;
-    margin:10px;
+   /* border:2px solid grey;*/
+    margin:20px;
+    overflow:auto;
+    opacity:0.95;
+}
+/*footer*/
+.footer{
+    border-top: 2px solid black;
+    text-align:center;
+    width:100%;
+    height:20px;
 }
 
-
-
-
-.footer{
-    height:50px;
-    border-top: 5px solid black;
-    text-align:center;
+.text-muted{
+    color:whitesmoke;
+    font-weight: bolder;
+    font-size:14px;
 }

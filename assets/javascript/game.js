@@ -16,7 +16,7 @@ let myId = 0;
 function resetStartGame(){
     
  //array for gem images   
- let images = ['assets/images/images-1.png', 'assets/images/images-2.png', 'assets/images/images.png', 'assets/images/small_15735.png']
+ let images = ['assets/images/blue-gem.jpg', 'assets/images/pink-gem.png', 'assets/images/blue-gem.png', 'assets/images/small_15735.png']
 
     $("#buttons").empty()
     
@@ -38,16 +38,14 @@ function resetStartGame(){
   gem.addClass("gems");
   gem.attr("data-random", randomGem);
   gem.attr("id", "gem_" + myId++)
-  gem.css({"background-image":"url('" + images[i] + "')"});
+  gem.css({"background-image":"url('" + images[i] + "')",
+            "background-size": "cover"});
   $("#buttons").append(gem);   
 
 
 } //end function resetStartGame
 
 };
-
-//call resetStartGame function
-resetStartGame()
 
 
 //runs function on click to convert data-random attribute to integer
@@ -68,7 +66,7 @@ if(randomScore === totalScore){
     wins++;
     totalScore = 0;
     $("#total-score").html("Your Total Score: " + totalScore);
-    $("#para-win").html("Wins: " + wins);
+    $("#win-loss").html("Wins: " + wins + " " + "Losses: " + losses);
    resetStartGame();
   
 }
@@ -78,13 +76,14 @@ if(totalScore > randomScore){
     losses++;
     totalScore = 0;
     $("#total-score").html("Your Total Score: " + totalScore);
-    $("#para-loss").html("Losses: " + losses);
+    $("#win-loss").html("Wins: " + wins + " " + "Losses: " + losses);
     resetStartGame()
 }
 //end if statements
 
 });
 
-
+//call resetStartGame function
+resetStartGame()
 
 });
